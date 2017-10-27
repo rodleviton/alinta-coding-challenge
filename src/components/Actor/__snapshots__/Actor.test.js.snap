@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Actor Component should render correctly 1`] = `
+<article
+  className={undefined}
+>
+  <header
+    className={undefined}
+  >
+    <h3>
+      Richard Dreyfuss
+    </h3>
+  </header>
+  <footer
+    className={undefined}
+  >
+    <h4>
+      Roles
+    </h4>
+    <p>
+      The Writer
+       (
+      Stand By Me
+      )
+    </p>
+  </footer>
+</article>
+`;

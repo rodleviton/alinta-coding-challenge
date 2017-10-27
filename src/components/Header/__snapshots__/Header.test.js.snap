@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component should render correctly 1`] = `
+<header
+  className={undefined}
+>
+  <div
+    className={undefined}
+  />
+  <div
+    className={undefined}
+  />
+  <a
+    className={undefined}
+    href="https://github.com/rodleviton/alinta-code-challenge"
+    target="_blank"
+    title="Rod Leviton Github Repo"
+  />
+</header>
+`;

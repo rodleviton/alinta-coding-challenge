@@ -1,0 +1,58 @@
+.header {
+  position: fixed;
+  background: #fff;
+  border-top: 2px solid #EF7F11;
+  border-bottom: 1px solid #eee;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+
+.logo {
+  background: url('./img/logo.png') no-repeat;
+  background-size: 160px 39px;
+  overflow: hidden;
+  margin: 13px 0 0 20px;
+  width: 160px;
+  height: 42px;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 42px;
+  }
+}
+
+// Github icon
+.github {
+  position: fixed;
+  z-index: 15;
+  right: 2.5rem;
+  top: 2rem;
+  width: 33px;
+  height: 32px;
+  background: url('./img/github.svg') no-repeat;
+  background-size: 33px 32px;
+  display: inline-block;
+}
+
+.avatar {
+  position: absolute;
+  z-index: 5;
+  top: 32px;
+  left: 50%;
+  margin-left: -32px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid #d2d2d2;
+  display: block;
+  background: url('./img/rodleviton.png') no-repeat;
+  background-size: 64px 64px;
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}

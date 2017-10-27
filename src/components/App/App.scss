@@ -1,0 +1,85 @@
+/* Reset */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl,
+dt, dd, blockquote, address{
+  margin: 0;
+  padding: 0;
+}
+
+/* Set box-sizing globally to handle padding and border widths */
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  color: #555;
+  min-width: 320px;
+  background: #fff;
+  font-size: 1.4em; /* Use `ems` because there is a Chrome bug misinterpreting rems on body element */
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.6;
+}
+
+/* The base font-size is set at 62.5% for convenience
+  of sizing rems in a way that is similar to using px: 1.6rem = 16px */
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+.masthead {
+  background: #f8f8f8;
+  width: 100%;
+  margin-top: 70px;
+  height: 200px;
+}
+
+.main {
+  padding: 0 10px 10px;
+  margin-top: -150px;
+}
+
+:global {
+  .notif-transition-enter {
+    opacity: 0.01;
+    transition: opacity .5s ease-in;
+  }
+
+  .notif-transition-enter-active {
+    opacity: 1;
+  }
+
+  .notif-transition-leave {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+  }
+
+  .notif-transition-leave-active {
+    opacity: 0.01;
+  }
+
+  .notif {
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.05), 0 15px 12px rgba(0,0,0,0.07);
+    padding: 10px 20px 10px 10px;
+    color: #555;
+    background: #fff;
+    border: 1px solid #eee;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-bottom: 6px;
+  }
+
+  .notif__container {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1000;
+    width: 80%;
+    max-width: 260px;
+  }
+}

@@ -1,0 +1,41 @@
+$movie-max-width: 360px;
+
+.container {
+  margin: 0 auto;
+  max-width: $movie-max-width;
+}
+
+.col {
+  float: left;
+  width: calc(360px - 20px); // bleeding edge support
+  margin: 20px 10px;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.h3 {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: block;
+  padding: 10px 20px;
+  background: #eee;
+  color: #222;
+  border-radius: 3px;
+  border: 1px solid #e3e3e3;
+}
+
+.empty {
+  font-size: 2rem;
+  width: 100%;
+  height: 200px;
+  line-height: 200px;
+  vertical-align: middle;
+  border: 1px dashed #ccc;
+  text-align: center;
+  background: #fff;
+}
