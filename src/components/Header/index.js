@@ -11,7 +11,7 @@ const Header = () => {
 
       <div className={styles.avatar}></div>
 
-      <a href="https://github.com/rodleviton/alinta-code-challenge" title="Rod Leviton Github Repo" target="_blank" className={styles.github}></a>
+      <a href="https://github.com/rodleviton/alinta-coding-challenge" title="Rod Leviton Github Repo" target="_blank" className={styles.github}></a>
     </header>
   );
 };
